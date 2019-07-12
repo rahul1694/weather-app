@@ -9,9 +9,6 @@ body {
     height: 50px;
     box-shadow: 0px 1px 20px #000000;
 }
-::placeholder {
-    color: #009688;
-}
 
 .nav-text {
     display: flex;
@@ -41,6 +38,21 @@ body {
     color: #009688;
 }
 
+@media screen and (min-width: 500px) and (max-width: 900px){ 
+    .search-bar input {
+        width: 55% !important;
+    }
+
+    .search-bar input:focus {
+        width: 70% !important;
+    }
+    
+}
+
+::placeholder {
+    color: #009688;
+}
+
 .search-bar input:focus {
     width: 40%;
 }
@@ -54,6 +66,7 @@ span .fa{
     display: flex;
     flex-flow: row;
     margin-left: 1%;
+    flex-wrap: wrap;
 }
 
 .location-card h1 {
@@ -77,4 +90,62 @@ span .fa{
     border: 2px solid #757575;
     color: white;
     background-color: #757575;
+}
+
+.weather-stats-card {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #616161;
+    margin: 1%;
+    border-radius: 5px
+}
+
+.weather-stats-card:hover {
+    background-color: #f9f6f6;
+}
+
+.weather-info {
+    flex: 3 1 0;
+}
+
+.row-1 {
+    display: flex;
+}
+
+.day {
+    margin-left: 12px;
+}
+
+.weather-logo {
+    flex: 1 1 auto;
+    justify-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.weather-status {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex: 9;
+    font-size: 20px;
+}
+
+.row-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.value-card {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+    border: 3px solid #9ccc65;
+    color: #616161;
+    width: 140px;
+    border-radius: 5px;
+}
+
+.google-maps {
+    flex: 1 1 0;
 }
