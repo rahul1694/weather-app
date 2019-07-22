@@ -42,9 +42,6 @@ Followed  by Id's and Classes */
     color: #009688;
 }
 
-.search-bar input:focus {
-    width: 40%;
-}
 
 @media screen and (min-width: 500px) and (max-width: 900px){ 
     .search-bar input {
