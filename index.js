@@ -3,9 +3,17 @@ import weatherapi from './weatherapi';
 let searchBtn = document.getElementById('search-btn');
 
 function setResValues(data) {
-    
+    console.log(data.weather[0].main);
     document.getElementById('loc-name').innerHTML = data.name + ',' + data.sys.country;
     document.getElementById('loc-country').src=`http://openweathermap.org/images/flags/${data.sys.country.toLowerCase()}.png`;
+    document.getElementById('weather-status-text').innerHTML= data.weather[0].main;
+    document.getElementById('loc-country').src=`http://openweathermap.org/images/flags/${data.sys.country.toLowerCase()}.png`;
+    document.getElementById('loc-country').src=`http://openweathermap.org/images/flags/${data.sys.country.toLowerCase()}.png`;
+}
+
+
+function createCard(Obj) {
+
 }
 
 function searchLocation(){
